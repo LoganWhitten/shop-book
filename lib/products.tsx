@@ -4,23 +4,28 @@ import type { Product } from "./types";
 export const products: Product[] = [
   // Incandescent Fixtures
   {
-    id: "incan-1",
-    name: "Source 4",
+    id: "s4",
+    name: "Source 4 ERS",
     inletConnector: "StagePin",
-    category: "Incandescent Fixture",
+    category: "Ellipsoidal",
     categorySlug: "incandescent",
-    wattage: 575,
+    wattage: 750,
     voltage: "120",
     links: [
       {
         name: "User Manual",
-        href: "https://example.com/manual.pdf",
-        size: "2.4MB",
+        href: "/manuals/s4/S4_User_Manual.pdf",
+        size: "1MB",
       },
       {
-        name: "Technical Specifications",
-        href: "https://example.com/manual.pdf",
-        size: "1.8MB",
+        name: "Beam Spread",
+        href: "/manuals/s4/S4_Beam_Spread.pdf",
+        size: "242KB",
+      },
+      {
+        name: "Assembly Guide",
+        href: "/manuals/s4/S4_Assembly_Guide.pdf",
+        size: "2.3MB",
       },
     ],
     icon: (
@@ -32,9 +37,77 @@ export const products: Product[] = [
     ),
     specs: [
       { name: "Gel Frame Size", value: "6.25" },
-      { name: "Beam Angle", value: "7-50°" },
-      { name: "Color Temp", value: "3200K" },
-      { name: "Weight", value: "5.2 lbs" },
+      { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
+      { name: "Beam Angle", value: "5-90°" },
+      { name: "Weight", value: "14-20 lbs" },
+    ],
+  },
+  {
+    id: "s4-par",
+    name: "Source 4 PAR",
+    inletConnector: "StagePin",
+    category: "PAR",
+    categorySlug: "incandescent",
+    wattage: 750,
+    voltage: "120",
+    links: [
+      {
+        name: "User Manual",
+        href: "/manuals/s4_par/S4_PAR_User_Manual.pdf",
+        size: "1MB",
+      },
+      {
+        name: "Assembly Guide",
+        href: "/manuals/s4_par/S4_PAR_Assembly_Guide.pdf",
+        size: "2.3MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-amber-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-amber-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-amber-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Gel Frame Size", value: '7.5"' },
+      { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
+      { name: "Beam Angle", value: "5-90°" },
+      { name: "Weight", value: "14-20 lbs" },
+    ],
+  },
+  {
+    id: "s4-parnel",
+    name: "Source 4 PARNel",
+    inletConnector: "StagePin",
+    category: "PAR",
+    categorySlug: "incandescent",
+    wattage: 750,
+    voltage: "120",
+    links: [
+      {
+        name: "User Manual",
+        href: "/manuals/s4_parnel/S4_PARNel_User_Manual.pdf",
+        size: "1MB",
+      },
+      {
+        name: "Assembly Guide",
+        href: "/manuals/s4_parnel/S4_PARNel_Assembly_Guide.pdf",
+        size: "2.3MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-amber-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-amber-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-amber-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Gel Frame Size", value: '7.5"' },
+      { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
+      { name: "Beam Angle", value: "5-90°" },
+      { name: "Weight", value: "14-20 lbs" },
     ],
   },
 ];

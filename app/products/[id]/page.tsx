@@ -61,18 +61,22 @@ export default function ProductPage({ params }: { params: { id: string } }) {
             </TabsContent>
             <TabsContent value="docs" className="space-y-4 pt-4">
               <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-2 p-3 rounded-lg border">
-                  <Info className="h-5 w-5 text-muted-foreground" />
-                  <div className="flex flex-col">
-                    <span className="font-medium">User Manual</span>
-                    <span className="text-sm text-muted-foreground">
-                      PDF, 2.4MB
-                    </span>
+                {product.links.map(({ name, href, size }) => (
+                  <div key={name} className="flex items-center gap-2 p-3 rounded-lg border">
+                    <Info className="h-5 w-5 text-muted-foreground" />
+                    <div className="flex flex-col">
+                      <span className="font-medium">{name}</span>
+                      <span className="text-sm text-muted-foreground">
+                        PDF, {size}
+                      </span>
+                    </div>
+                    <Link className="ml-auto" href={href} target="_blank">
+                      <Button variant="ghost" size="sm">
+                        Download
+                      </Button>
+                    </Link>
                   </div>
-                  <Button variant="ghost" size="sm" className="ml-auto">
-                    Download
-                  </Button>
-                </div>
+                ))}
               </div>
             </TabsContent>
           </Tabs>
@@ -101,7 +105,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
             <h3 className="text-lg font-semibold">Documentation</h3>
             <div className="flex flex-col gap-4">
               {product.links.map(({ name, href, size }) => (
-                <div className="flex items-center gap-2 p-3 rounded-lg border">
+                <div key={name}  className="flex items-center gap-2 p-3 rounded-lg border">
                   <Info className="h-5 w-5 text-muted-foreground" />
                   <div className="flex flex-col">
                     <span className="font-medium">{name}</span>
