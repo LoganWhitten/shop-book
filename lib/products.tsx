@@ -72,8 +72,8 @@ export const products: Product[] = [
     specs: [
       { name: "Gel Frame Size", value: '7.5"' },
       { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
-      { name: "Beam Angle", value: "5-90°" },
-      { name: "Weight", value: "14-20 lbs" },
+      { name: "Beam Angle", value: "12-70°" },
+      { name: "Weight", value: "7.5/12.8 lbs" },
     ],
   },
   {
@@ -106,8 +106,69 @@ export const products: Product[] = [
     specs: [
       { name: "Gel Frame Size", value: '7.5"' },
       { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
+      { name: "Beam Angle", value: "25-45°" },
+      { name: "Weight", value: "8 lbs" },
+    ],
+  },
+  {
+    id: "s4-lustr-2",
+    name: "Source 4 Lustr Series 2",
+    inletConnector: "PowerCon",
+    outletConnector: "PowerCon",
+    category: "Lustr",
+    categorySlug: "led",
+    wattage: 167,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/lustr_2/Lustr_2_User_Manual.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Gel Frame Size", value: '6.25"' },
+      { name: "Max Fixtures Thru", value: "9" },
       { name: "Beam Angle", value: "5-90°" },
-      { name: "Weight", value: "14-20 lbs" },
+      { name: "Weight", value: "18.3 lbs" },
+    ],
+  },
+  {
+    id: "cs-par-db",
+    name: "ColorSource PAR Deep Blue",
+    inletConnector: "PowerCon",
+    outletConnector: "PowerCon",
+    category: "ColorSource PAR",
+    categorySlug: "led",
+    wattage: 90,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/cs_par/ColorSource_PAR_Datasheet.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Gel Frame Size", value: '6.25"' },
+      { name: "Max Fixtures Thru", value: "9" },
+      { name: "Beam Angle", value: "15.3°" },
+      { name: "Weight", value: "8.3 lbs" },
+      { name: "IP Rating", value: "IP20" },
     ],
   },
 ];
