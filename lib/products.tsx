@@ -4,8 +4,8 @@ import type { Product } from "./types"
 export const products: Product[] = [
   // Incandescent Fixtures
   {
-    id: "incandescent-1",
-    name: "Fresnel 650W",
+    id: "incan-1",
+    name: "Source 4",
     category: "Incandescent Fixtures",
     categorySlug: "incandescent",
     wattage: 650,

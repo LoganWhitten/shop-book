@@ -35,14 +35,69 @@ export default function ProductPage({ params }: { params: { id: string } }) {
           <AmperageSlider wattage={product.wattage} />
         </div>
 
-        <Tabs defaultValue="specs">
-          <TabsList className="grid grid-cols-3 w-full">
-            <TabsTrigger value="specs">Specifications</TabsTrigger>
-            <TabsTrigger value="features">Features</TabsTrigger>
-            <TabsTrigger value="docs">Documentation</TabsTrigger>
-          </TabsList>
-          <TabsContent value="specs" className="space-y-4 pt-4">
-            <div className="grid grid-cols-2 gap-2 text-sm">
+        {/* Mobile view - Tabs (hidden on lg and above) */}
+        <div className="lg:hidden">
+          <Tabs defaultValue="specs">
+            <TabsList className="grid grid-cols-3 w-full">
+              <TabsTrigger value="specs">Specifications</TabsTrigger>
+              <TabsTrigger value="features">Features</TabsTrigger>
+              <TabsTrigger value="docs">Documentation</TabsTrigger>
+            </TabsList>
+            <TabsContent value="specs" className="space-y-4 pt-4">
+              <div className="grid grid-cols-2 gap-2 text-sm">
+                {product.specs.map((spec, index) => (
+                  <div key={index} className="flex flex-col p-3 rounded-lg bg-muted">
+                    <span className="text-muted-foreground">{spec.name}</span>
+                    <span className="font-medium">{spec.value}</span>
+                  </div>
+                ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="features" className="space-y-4 pt-4">
+              <ul className="space-y-2">
+                {product.features.map((feature, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <div className="rounded-full bg-primary/10 p-1 mt-0.5">
+                      <div className="rounded-full bg-primary w-1.5 h-1.5" />
+                    </div>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </TabsContent>
+            <TabsContent value="docs" className="space-y-4 pt-4">
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center gap-2 p-3 rounded-lg border">
+                  <Info className="h-5 w-5 text-muted-foreground" />
+                  <div className="flex flex-col">
+                    <span className="font-medium">User Manual</span>
+                    <span className="text-sm text-muted-foreground">PDF, 2.4MB</span>
+                  </div>
+                  <Button variant="ghost" size="sm" className="ml-auto">
+                    Download
+                  </Button>
+                </div>
+                <div className="flex items-center gap-2 p-3 rounded-lg border">
+                  <Info className="h-5 w-5 text-muted-foreground" />
+                  <div className="flex flex-col">
+                    <span className="font-medium">Technical Specifications</span>
+                    <span className="text-sm text-muted-foreground">PDF, 1.8MB</span>
+                  </div>
+                  <Button variant="ghost" size="sm" className="ml-auto">
+                    Download
+                  </Button>
+                </div>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </div>
+
+        {/* Desktop view - Side by side (hidden on smaller screens) */}
+        <div className="hidden lg:grid lg:grid-cols-3 lg:gap-6">
+          {/* Specifications */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold">Specifications</h3>
+            <div className="grid grid-cols-1 gap-2 text-sm">
               {product.specs.map((spec, index) => (
                 <div key={index} className="flex flex-col p-3 rounded-lg bg-muted">
                   <span className="text-muted-foreground">{spec.name}</span>
@@ -50,8 +105,11 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 </div>
               ))}
             </div>
-          </TabsContent>
-          <TabsContent value="features" className="space-y-4 pt-4">
+          </div>
+          
+          {/* Features */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold">Features</h3>
             <ul className="space-y-2">
               {product.features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-2">
@@ -62,8 +120,11 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 </li>
               ))}
             </ul>
-          </TabsContent>
-          <TabsContent value="docs" className="space-y-4 pt-4">
+          </div>
+          
+          {/* Documentation */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold">Documentation</h3>
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-2 p-3 rounded-lg border">
                 <Info className="h-5 w-5 text-muted-foreground" />
@@ -86,8 +147,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 </Button>
               </div>
             </div>
-          </TabsContent>
-        </Tabs>
+          </div>
+        </div>
       </div>
     </main>
   )
