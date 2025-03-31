@@ -11,7 +11,7 @@ export default function Home() {
     <main className="container px-4 py-6 mx-auto max-w-md md:max-w-2xl lg:max-w-4xl">
       <div className="flex flex-col gap-6">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold">UNCSA Shop Book</h1>
+          <h1 className="text-2xl font-bold">Logan Whitten's Shop Book</h1>
           <Button variant="ghost" size="icon" className="rounded-full">
             <Search className="h-5 w-5" />
             <span className="sr-only">Search</span>

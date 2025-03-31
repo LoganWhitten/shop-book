@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'UNCSA Shop Book',
+        name: "Logan's Shop Book",
         short_name: 'ShopBook',
         description: 'A "Comprehensive" guide to the Lighting Equipment in the UNCSA Shop',
         start_url: '/',
