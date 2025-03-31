@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import ProductCard from "@/components/product-card"
 import { getProductsByCategory } from "@/lib/products"
 
-export default function CategoryPage({ params }: { params: { slug: string } }) {
+export default async function CategoryPage({ params }: { params: { slug: string } }) {
   const products = getProductsByCategory(params.slug)
   const categoryName = getCategoryName(params.slug)
 
