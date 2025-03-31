@@ -5,12 +5,18 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { getProductById } from "@/lib/products"
 import PowerInfo from "@/components/power-info"
+import { use } from "react"
 
-export default function ProductPage({ params }: { params: { id: string } }) {
-  const product = getProductById(params.id)
+export default function ProductPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = use(params);
+  const product = getProductById(id);
 
   if (!product) {
-    return <div className="p-8 text-center">Product not found</div>
+    return <div className="p-8 text-center">Product not found</div>;
   }
 
   return (
@@ -62,7 +68,10 @@ export default function ProductPage({ params }: { params: { id: string } }) {
             <TabsContent value="docs" className="space-y-4 pt-4">
               <div className="flex flex-col gap-4">
                 {product.links.map(({ name, href, size }) => (
-                  <div key={name} className="flex items-center gap-2 p-3 rounded-lg border">
+                  <div
+                    key={name}
+                    className="flex items-center gap-2 p-3 rounded-lg border"
+                  >
                     <Info className="h-5 w-5 text-muted-foreground" />
                     <div className="flex flex-col">
                       <span className="font-medium">{name}</span>
@@ -105,7 +114,10 @@ export default function ProductPage({ params }: { params: { id: string } }) {
             <h3 className="text-lg font-semibold">Documentation</h3>
             <div className="flex flex-col gap-4">
               {product.links.map(({ name, href, size }) => (
-                <div key={name}  className="flex items-center gap-2 p-3 rounded-lg border">
+                <div
+                  key={name}
+                  className="flex items-center gap-2 p-3 rounded-lg border"
+                >
                   <Info className="h-5 w-5 text-muted-foreground" />
                   <div className="flex flex-col">
                     <span className="font-medium">{name}</span>
