@@ -369,6 +369,62 @@ export const products: Product[] = [
       { name: "Lenses", value: "Border | Cyc" },
     ],
   },
+  {
+    id: "WF-Strb",
+    name: "WildFire VioStorm 120 LED Series",
+    inletConnector: "PowerCon",
+    outletConnector: "PowerCon",
+    category: "UV Cannon",
+    categorySlug: "led",
+    wattage: 175,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/wf_viostorm/TDS_VioStorm_120_UV_LED_Series_215-066-05.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Beam Angle", value: "10°" },
+      { name: "Weight", value: "13.35 lbs" },
+    ],
+  },
+  {
+    id: "Elation-Strb",
+    name: "Elation LED Strobe",
+    inletConnector: "PowerCon",
+    outletConnector: "PowerCon",
+    category: "Strobe",
+    categorySlug: "led",
+    wattage: 900,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/el_pr/Elation Protron 3K Strobe.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Beam Angle", value: "120°" },
+      { name: "Weight", value: "17.2 lbs" },
+    ],
+  },
 ];
 
 export function getProductsByCategory(categorySlug: string): Product[] {
