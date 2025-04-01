@@ -20,7 +20,7 @@ export default function PowerInfo({ wattage, inletConnector, outletConnector, vo
     <div className="space-y-4 p-4 border rounded-lg">
       <h3 className="font-semibold">Power Info</h3>
 
-      <div className={`grid grid-cols-2 gap-4 mt-4`}>
+      <div className={`grid grid-cols-2 gap-4`}>
         <div className={`grid ${voltage === "120/208" ? "grid-cols-2" : ""} `}>
           <div
             className={`p-3 ${

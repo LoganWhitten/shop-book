@@ -142,10 +142,10 @@ export const products: Product[] = [
   },
   {
     id: "cs-par-db",
-    name: "ColorSource PAR Deep Blue",
+    name: "ColorSource Deep Blue PAR",
     inletConnector: "PowerCon",
     outletConnector: "PowerCon",
-    category: "ColorSource PAR",
+    category: "PAR",
     categorySlug: "led",
     wattage: 90,
     voltage: "120/208",
@@ -169,6 +169,119 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "15.3°" },
       { name: "Weight", value: "8.3 lbs" },
       { name: "IP Rating", value: "IP20" },
+    ],
+  },
+  {
+    id: "cs-lin-48",
+    name: "ColorSource Linear DB 2mm",
+    inletConnector: "True1",
+    outletConnector: "True1",
+    category: "Striplight",
+    categorySlug: "led",
+    wattage: 218,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/cs_lin/ColorSource_Linear_Datasheet.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Max Fixtures Thru", value: "9" },
+      { name: "Beam Angle", value: "15.6°" },
+      { name: "Weight", value: "20.1 lbs" },
+      { name: "IP Rating", value: "IP20" },
+    ],
+  },
+  {
+    id: "sf-1000",
+    name: "SolaFrame 1000",
+    inletConnector: "True1",
+    category: "Profile",
+    categorySlug: "moving",
+    wattage: 958,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/sf_1000/SolaFrame_1000_Datasheet.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Beam Angle", value: "12-40°" },
+      { name: "Weight", value: "69.9 lbs" },
+      { name: "Ethernet", value: "In / Thru" },
+    ],
+  },
+  {
+    id: "sw-1000",
+    name: "SolaWash 1000",
+    inletConnector: "True1",
+    category: "Wash",
+    categorySlug: "moving",
+    wattage: 967,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/sw_1000/SolaWash_1000_Datasheet.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Beam Angle", value: "12-55°" },
+      { name: "Weight", value: "69.9 lbs" },
+      { name: "Ethernet", value: "In / Thru" },
+    ],
+  },
+  {
+    id: "ayrton-ghibli",
+    name: "Ayrton Ghibli",
+    inletConnector: "True1",
+    category: "Profile",
+    categorySlug: "moving",
+    wattage: 800,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/ghibli/Ghibli_Specs.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Beam Angle", value: "7-56" },
+      { name: "Weight", value: "78.5 lbs" },
     ],
   },
 ];
