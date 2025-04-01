@@ -258,6 +258,34 @@ export const products: Product[] = [
     ],
   },
   {
+    id: "sp-19",
+    name: "SolaPix 19",
+    inletConnector: "True1",
+    category: "Wash",
+    categorySlug: "moving",
+    wattage: 900,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/sp_19/SolaPix_Datasheet.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Beam Angle", value: "12-55°" },
+      { name: "Weight", value: "35 lbs" },
+      { name: "Ethernet", value: "In / Thru" },
+    ],
+  },
+  {
     id: "ayrton-ghibli",
     name: "Ayrton Ghibli",
     inletConnector: "True1",

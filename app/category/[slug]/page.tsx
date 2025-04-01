@@ -5,14 +5,13 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import ProductCard from "@/components/product-card"
 import { getProductsByCategory } from "@/lib/products"
-import { use } from "react"
 
 export default function CategoryPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  const { slug} = use(params);
+  const { slug } = params;
   const products = getProductsByCategory(slug);
   const categoryName = getCategoryName(slug);
 
