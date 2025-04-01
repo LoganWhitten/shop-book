@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ChevronLeft, Info } from "lucide-react"
+import { ArrowUpRight, ChevronLeft, Info } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -81,7 +81,7 @@ export default function ProductPage({
                     </div>
                     <Link className="ml-auto" href={href} target="_blank">
                       <Button variant="ghost" size="sm">
-                        Download
+                        View <ArrowUpRight />
                       </Button>
                     </Link>
                   </div>
@@ -127,7 +127,7 @@ export default function ProductPage({
                   </div>
                   <Link className="ml-auto" href={href} target="_blank">
                     <Button variant="ghost" size="sm">
-                      Download
+                      View <ArrowUpRight />
                     </Button>
                   </Link>
                 </div>

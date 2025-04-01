@@ -318,12 +318,12 @@ export const products: Product[] = [
     inletConnector: "PowerCon",
     category: "Striplight",
     categorySlug: "led",
-    wattage: 800,
+    wattage: 0,
     voltage: "120/208",
     links: [
       {
         name: "User Manual/Datasheet",
-        href: "/manuals/ghibli/Ghibli_Specs.pdf",
+        href: "/manuals/cf_1/Color_Force_Manual.pdf",
         size: "1MB",
       },
     ],
@@ -335,8 +335,38 @@ export const products: Product[] = [
       </div>
     ),
     specs: [
-      { name: "Beam Angle", value: "7-56" },
+      { name: "Beam Angle", value: "7-56°" },
       { name: "Weight", value: "33/48 lbs" },
+    ],
+  },
+  {
+    id: "CF-II",
+    name: "Colorforce II",
+    inletConnector: "True1",
+    outletConnector: "True1",
+    category: "Striplight",
+    categorySlug: "led",
+    wattage: 800,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/cf_2/Color_Force_2_Specs.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Beam Angle", value: "22°" },
+      { name: "Max Fixtures Thru", value: "3" },
+      { name: "Weight", value: "53 lbs" },
+      { name: "Lenses", value: "Border | Cyc" },
     ],
   },
 ];
