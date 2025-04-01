@@ -312,6 +312,33 @@ export const products: Product[] = [
       { name: "Weight", value: "78.5 lbs" },
     ],
   },
+  {
+    id: "CF-I",
+    name: "Colorforce I",
+    inletConnector: "PowerCon",
+    category: "Striplight",
+    categorySlug: "led",
+    wattage: 800,
+    voltage: "120/208",
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/ghibli/Ghibli_Specs.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Beam Angle", value: "7-56" },
+      { name: "Weight", value: "33/48 lbs" },
+    ],
+  },
 ];
 
 export function getProductsByCategory(categorySlug: string): Product[] {
