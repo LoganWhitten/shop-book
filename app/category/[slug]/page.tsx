@@ -5,16 +5,10 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import ProductCard from "@/components/product-card"
 import { getProductsByCategory } from "@/lib/products"
-import { use } from "react"
 
-export default function CategoryPage({
-  params,
-}: {
-  params: Promise<{slug: string}>;
-}) {
-  const { slug } = use(params);
-  const products = getProductsByCategory(slug);
-  const categoryName = getCategoryName(slug);
+export default function CategoryPage({ params }: { params: { slug: string } }) {
+  const products = getProductsByCategory(params.slug)
+  const categoryName = getCategoryName(params.slug)
 
   return (
     <main className="container px-4 py-6 mx-auto max-w-md md:max-w-2xl lg:max-w-4xl">
@@ -45,7 +39,7 @@ export default function CategoryPage({
         </div>
       </div>
     </main>
-  );
+  )
 }
 
 function getCategoryName(slug: string): string {

@@ -1,4 +1,4 @@
-import type { Product } from "./types";
+import type { Product } from "./types"
 
 // This would typically come from an API or database
 export const products: Product[] = [
@@ -11,6 +11,8 @@ export const products: Product[] = [
     categorySlug: "incandescent",
     wattage: 750,
     voltage: "120",
+    voltageOptions: [120],
+    lampOptions: [375, 575, 750],
     links: [
       {
         name: "User Manual",
@@ -36,8 +38,22 @@ export const products: Product[] = [
       </div>
     ),
     specs: [
-      { name: "Gel Frame Size", value: "6.25" },
+      { name: "Gel Frame Size", value: '6.25"' },
       { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
+      { name: "Beam Angle", value: "5-90°" },
+      { name: "Weight", value: "14-20 lbs" },
+    ],
+    features: [
+      "High-efficiency reflector system",
+      "Interchangeable lens tubes",
+      "Enhanced thermal management",
+      "Precision optics",
+      "Gobo projection capable",
+    ],
+    getSpecs: (wattage: number) => [
+      { name: "Wattage", value: `${wattage}W` },
+      { name: "Gel Frame Size", value: '6.25"' },
+      { name: "Stocked Lamps", value: "Osram HPL" },
       { name: "Beam Angle", value: "5-90°" },
       { name: "Weight", value: "14-20 lbs" },
     ],
@@ -50,6 +66,8 @@ export const products: Product[] = [
     categorySlug: "incandescent",
     wattage: 750,
     voltage: "120",
+    voltageOptions: [120],
+    lampOptions: [375, 575, 750],
     links: [
       {
         name: "User Manual",
@@ -75,6 +93,20 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "12-70°" },
       { name: "Weight", value: "7.5/12.8 lbs" },
     ],
+    features: [
+      "Interchangeable lenses (VNSP, NSP, MFL, WFL)",
+      "Rotatable barrel",
+      "Rugged die-cast aluminum construction",
+      "Tool-free lamp alignment",
+      "Gel frame and color frame holders included",
+    ],
+    getSpecs: (wattage: number) => [
+      { name: "Wattage", value: `${wattage}W` },
+      { name: "Gel Frame Size", value: '7.5"' },
+      { name: "Stocked Lamps", value: "Osram HPL" },
+      { name: "Beam Angle", value: "12-70°" },
+      { name: "Weight", value: "7.5/12.8 lbs" },
+    ],
   },
   {
     id: "s4-parnel",
@@ -84,6 +116,8 @@ export const products: Product[] = [
     categorySlug: "incandescent",
     wattage: 750,
     voltage: "120",
+    voltageOptions: [120],
+    lampOptions: [375, 575, 750],
     links: [
       {
         name: "User Manual",
@@ -109,6 +143,20 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "25-45°" },
       { name: "Weight", value: "8 lbs" },
     ],
+    features: [
+      "Combines PAR and Fresnel capabilities",
+      "Smooth field with soft edges",
+      "Variable beam angle with simple adjustment",
+      "Consistent color temperature",
+      "Easy access for lamp changes",
+    ],
+    getSpecs: (wattage: number) => [
+      { name: "Wattage", value: `${wattage}W` },
+      { name: "Gel Frame Size", value: '7.5"' },
+      { name: "Stocked Lamps", value: "Osram HPL" },
+      { name: "Beam Angle", value: "25-45°" },
+      { name: "Weight", value: "8 lbs" },
+    ],
   },
   {
     id: "s4-lustr-2",
@@ -119,6 +167,7 @@ export const products: Product[] = [
     categorySlug: "led",
     wattage: 167,
     voltage: "120/208",
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -139,6 +188,13 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "5-90°" },
       { name: "Weight", value: "18.3 lbs" },
     ],
+    features: [
+      "7-color LED array (XRDTM)",
+      "Interchangeable lens tubes",
+      "DMX/RDM control",
+      "Multiple dimming curves",
+      "Virtually silent operation",
+    ],
   },
   {
     id: "cs-par-db",
@@ -149,6 +205,7 @@ export const products: Product[] = [
     categorySlug: "led",
     wattage: 90,
     voltage: "120/208",
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -170,6 +227,13 @@ export const products: Product[] = [
       { name: "Weight", value: "8.3 lbs" },
       { name: "IP Rating", value: "IP20" },
     ],
+    features: [
+      "Enhanced deep blue LED array",
+      "Simple user interface",
+      "RGB color mixing",
+      "Multiple control options",
+      "Rugged construction",
+    ],
   },
   {
     id: "cs-lin-48",
@@ -180,6 +244,7 @@ export const products: Product[] = [
     categorySlug: "led",
     wattage: 218,
     voltage: "120/208",
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -200,6 +265,13 @@ export const products: Product[] = [
       { name: "Weight", value: "20.1 lbs" },
       { name: "IP Rating", value: "IP20" },
     ],
+    features: [
+      "Linear form factor for even wash",
+      "Deep blue LED technology",
+      "Multiple length options",
+      "Simple setup and control",
+      "Homogenized output",
+    ],
   },
   {
     id: "sf-1000",
@@ -209,6 +281,7 @@ export const products: Product[] = [
     categorySlug: "moving",
     wattage: 958,
     voltage: "120/208",
+    voltageOptions: [208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -217,9 +290,9 @@ export const products: Product[] = [
       },
     ],
     icon: (
-      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
-        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
-          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+      <div className="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center rotate-45">
+        <div className="w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-purple-500 rounded-full"> </div>
         </div>
       </div>
     ),
@@ -227,6 +300,13 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "12-40°" },
       { name: "Weight", value: "69.9 lbs" },
       { name: "Ethernet", value: "In / Thru" },
+    ],
+    features: [
+      "CMY color mixing",
+      "Rotating and fixed gobo wheels",
+      "Animation wheel",
+      "Framing shutters",
+      "Iris, prism and frost effects",
     ],
   },
   {
@@ -237,6 +317,7 @@ export const products: Product[] = [
     categorySlug: "moving",
     wattage: 967,
     voltage: "120/208",
+    voltageOptions: [208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -245,9 +326,9 @@ export const products: Product[] = [
       },
     ],
     icon: (
-      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
-        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
-          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+      <div className="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center rotate-45">
+        <div className="w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-purple-500 rounded-full"> </div>
         </div>
       </div>
     ),
@@ -256,6 +337,7 @@ export const products: Product[] = [
       { name: "Weight", value: "69.9 lbs" },
       { name: "Ethernet", value: "In / Thru" },
     ],
+    features: ["CMY color mixing", "Variable CTO", "Motorized zoom", "Frost filter", "High CRI output"],
   },
   {
     id: "sp-19",
@@ -265,6 +347,7 @@ export const products: Product[] = [
     categorySlug: "moving",
     wattage: 900,
     voltage: "120/208",
+    voltageOptions: [208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -273,9 +356,9 @@ export const products: Product[] = [
       },
     ],
     icon: (
-      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
-        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
-          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+      <div className="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center rotate-45">
+        <div className="w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-purple-500 rounded-full"> </div>
         </div>
       </div>
     ),
@@ -283,6 +366,13 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "12-55°" },
       { name: "Weight", value: "35 lbs" },
       { name: "Ethernet", value: "In / Thru" },
+    ],
+    features: [
+      "19 RGBW LEDs",
+      "Individual pixel control",
+      "Rapid movement",
+      "Infinite pan and tilt",
+      "Pixel mapping capabilities",
     ],
   },
   {
@@ -293,6 +383,7 @@ export const products: Product[] = [
     categorySlug: "moving",
     wattage: 800,
     voltage: "120/208",
+    voltageOptions: [208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -301,16 +392,17 @@ export const products: Product[] = [
       },
     ],
     icon: (
-      <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center">
-        <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center">
-          <div className="w-8 h-8 bg-blue-500 rounded-full"> </div>
+      <div className="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center rotate-45">
+        <div className="w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-purple-500 rounded-full"> </div>
         </div>
       </div>
     ),
     specs: [
-      { name: "Beam Angle", value: "7-56" },
+      { name: "Beam Angle", value: "7-56°" },
       { name: "Weight", value: "78.5 lbs" },
     ],
+    features: ["Framing system", "CMY color mixing", "Variable CTO", "Multiple gobo wheels", "Animation effects"],
   },
   {
     id: "CF-I",
@@ -318,8 +410,9 @@ export const products: Product[] = [
     inletConnector: "PowerCon",
     category: "Striplight",
     categorySlug: "led",
-    wattage: 0,
+    wattage: 600,
     voltage: "120/208",
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -338,6 +431,13 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "7-56°" },
       { name: "Weight", value: "33/48 lbs" },
     ],
+    features: [
+      "RGBA color mixing",
+      "Multiple length options",
+      "Pixel mapping capability",
+      "Homogenized output",
+      "Multiple control modes",
+    ],
   },
   {
     id: "CF-II",
@@ -348,6 +448,7 @@ export const products: Product[] = [
     categorySlug: "led",
     wattage: 800,
     voltage: "120/208",
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -368,6 +469,13 @@ export const products: Product[] = [
       { name: "Weight", value: "53 lbs" },
       { name: "Lenses", value: "Border | Cyc" },
     ],
+    features: [
+      "RGBW color mixing",
+      "Improved output over original",
+      "Pixel mapping capability",
+      "Multiple length options",
+      "Theatrical grade dimming",
+    ],
   },
   {
     id: "WF-Strb",
@@ -378,6 +486,7 @@ export const products: Product[] = [
     categorySlug: "led",
     wattage: 175,
     voltage: "120/208",
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -396,6 +505,13 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "10°" },
       { name: "Weight", value: "13.35 lbs" },
     ],
+    features: [
+      "High-output UV LED array",
+      "Narrow beam angle",
+      "DMX controllable",
+      "Silent operation",
+      "Long-life LEDs",
+    ],
   },
   {
     id: "Elation-Strb",
@@ -406,6 +522,7 @@ export const products: Product[] = [
     categorySlug: "led",
     wattage: 900,
     voltage: "120/208",
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -424,13 +541,21 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "120°" },
       { name: "Weight", value: "17.2 lbs" },
     ],
+    features: [
+      "High-intensity white LED strobe",
+      "Variable flash rate",
+      "Adjustable intensity",
+      "Multiple control modes",
+      "Linkable for larger arrays",
+    ],
   },
-];
+]
 
-export function getProductsByCategory(categorySlug: string): Product[] {
-  return products.filter((product) => product.categorySlug === categorySlug);
+export const getProductsByCategory = (categorySlug: string) => {
+  return products.filter((product) => product.categorySlug === categorySlug)
 }
 
-export function getProductById(id: string): Product | undefined {
-  return products.find((product) => product.id === id);
+export const getProductById = (id: string) => {
+  return products.find((product) => product.id === id)
 }
+
