@@ -59,7 +59,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
           </TabsContent>
           <TabsContent value="features" className="space-y-4 pt-4">
             <ul className="space-y-2">
-              {product.features.map((feature, index) => (
+              {(product.features ?? []).map((feature, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <div className="rounded-full bg-primary/10 p-1 mt-0.5">
                     <div className="rounded-full bg-primary w-1.5 h-1.5" />
