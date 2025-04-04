@@ -378,46 +378,48 @@ export default function Home() {
                   )}
 
                   {/* Power requirements */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: 0.2 }}
-                    className="mb-6 bg-gray-900 rounded-xl p-4 border border-gray-800"
-                  >
-                    <h4 className="text-sm font-medium mb-3">Power Requirements</h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      {(
-                        currentProduct.voltageOptions ||
-                        (currentProduct.voltage
-                          ? currentProduct.voltage.split("/").map((v) => Number.parseInt(v))
-                          : [120])
-                      ).map((voltage) => (
-                        <div
-                          key={voltage}
-                          className={`p-4 rounded-lg flex items-center gap-4 ${
-                            voltage === 120
-                              ? "bg-blue-950/30 border border-blue-900/50"
-                              : "bg-purple-950/30 border border-purple-900/50"
-                          }`}
-                        >
-                          <Zap className={`h-10 w-10 ${voltage === 120 ? "text-blue-400" : "text-purple-400"}`} />
-                          <div>
-                            <div className="text-sm opacity-70">{voltage}V</div>
-                            <div className="text-3xl font-bold">
-                              <AnimatedNumber
-                                value={Number.parseFloat(calculateAmperage(currentWattage, voltage))}
-                                decimals={2}
-                                suffix="A"
-                              />
-                            </div>
-                            <div className="text-sm opacity-70">
-                              <AnimatedNumber value={currentWattage} suffix="W" />
+                  {currentProduct.categorySlug !== 'power' && currentProduct.categorySlug !== 'control' && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.2 }}
+                      className="mb-6 bg-gray-900 rounded-xl p-4 border border-gray-800"
+                    >
+                      <h4 className="text-sm font-medium mb-3">Power Requirements</h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {(
+                          currentProduct.voltageOptions ||
+                          (currentProduct.voltage
+                            ? currentProduct.voltage.split("/").map((v) => Number.parseInt(v))
+                            : [120])
+                        ).map((voltage) => (
+                          <div
+                            key={voltage}
+                            className={`p-4 rounded-lg flex items-center gap-4 ${
+                              voltage === 120
+                                ? "bg-blue-950/30 border border-blue-900/50"
+                                : "bg-purple-950/30 border border-purple-900/50"
+                            }`}
+                          >
+                            <Zap className={`h-10 w-10 ${voltage === 120 ? "text-blue-400" : "text-purple-400"}`} />
+                            <div>
+                              <div className="text-sm opacity-70">{voltage}V</div>
+                              <div className="text-3xl font-bold">
+                                <AnimatedNumber
+                                  value={Number.parseFloat(calculateAmperage(currentWattage, voltage))}
+                                  decimals={2}
+                                  suffix="A"
+                                />
+                              </div>
+                              <div className="text-sm opacity-70">
+                                <AnimatedNumber value={currentWattage} suffix="W" />
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      ))}
-                    </div>
-                  </motion.div>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
 
                   {/* Tabs */}
                   <motion.div
