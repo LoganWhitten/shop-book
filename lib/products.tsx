@@ -627,7 +627,7 @@ export const products: Product[] = [
     links: [
       {
         name: "User Manual/Datasheet",
-        href: "/manuals/s_96/touring_rack.pdf",
+        href: "/manuals/nomad/ETCnomad_Datasheet_revO.pdf",
         size: "1MB",
       },
     ],
@@ -638,12 +638,83 @@ export const products: Product[] = [
         </div>
       </div>
     ),
-    specs: [
-      { name: "Circuts @ 120v", value: "12" },
-      { name: "Circuts @ 208v", value: "12" },
-      { name: "Circuts @ 3 Phase", value: "3" },
+    specs: [{ name: "Universes With Key", value: "2" }],
+    features: ["ETC EOS Family Control", "Portable Control Solution"],
+  },
+  {
+    id: "APEX",
+    name: "Eos Apex 5",
+    category: "ETC",
+    categorySlug: "control",
+    wattage: 0,
+    voltage: "120/208",
+    voltageOptions: [120, 208],
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/apex/Eos_Apex_5_Datasheet_revB.pdf",
+        size: "1MB",
+      },
     ],
-    features: ["Power Distribution for 120/208v", "CamLoc In/Thru"],
+    icon: (
+      <div className="w-16 h-16 bg-green-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-green-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [{ name: "Universes Controllable", value: "48" }],
+    features: ["ETC EOS Family Control", "Portable Control Solution"],
+  },
+  {
+    id: "ION-XE",
+    name: "ETC ION XE 20",
+    category: "ETC",
+    categorySlug: "control",
+    wattage: 0,
+    voltage: "120/208",
+    voltageOptions: [120, 208],
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/ion/Ion_Xe_Datasheet_revE.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-green-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-green-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [{ name: "Universes Controllable", value: "6?" }],
+    features: ["ETC EOS Family Control", "Portable Control Solution"],
+  },
+  {
+    id: "2pt-gateway",
+    name: "ETC 2-Port DMX/RDM Gateway",
+    category: "ETC",
+    categorySlug: "control",
+    wattage: 0,
+    voltage: "120/208",
+    voltageOptions: [120, 208],
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/gateways/4261L1001_DMX-RDM_2-Port_Gateway_Datasheet_vG.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-green-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-green-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [{ name: "Universes Controllable", value: "48" }],
+    features: ["ETC EOS Family Control", "Portable Control Solution"],
   },
 ];
 
