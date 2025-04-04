@@ -716,6 +716,31 @@ export const products: Product[] = [
     specs: [{ name: "Universes Controllable", value: "48" }],
     features: ["ETC EOS Family Control", "Portable Control Solution"],
   },
+  {
+    id: "4pt-gateway",
+    name: "ETC Response 4-Port DMX/RDM Gateway",
+    category: "ETC",
+    categorySlug: "control",
+    wattage: 0,
+    voltage: "120/208",
+    voltageOptions: [120, 208],
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/gateways/4261L1001_DMX-RDM_2-Port_Gateway_Datasheet_vG.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-green-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-green-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [{ name: "DMX Ports", value: "4" }],
+    features: ["ETC EOS Family Control", "Portable sACN Solution"],
+  },
 ];
 
 export const getProductsByCategory = (categorySlug: string) => {
