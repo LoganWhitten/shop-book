@@ -190,9 +190,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-auto p-4 border-t border-gray-800 text-xs text-gray-500 hidden md:block">
-          <p>Lighting Equipment Reference</p>
-          <p>v1.0.0</p>
+        <div className="mt-auto p-4 border-t border-gray-800 text-xs place-items-center text-gray-500 hidden md:block">
+          <p>Made very quickly by <a className="underline hover:text-gray-400" href="https://instagram.com/loganwhitten512">Logan Whitten</a></p>
+          <p>for initial refrence only</p>
         </div>
       </motion.div>
 
