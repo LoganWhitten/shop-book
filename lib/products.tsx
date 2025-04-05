@@ -693,7 +693,7 @@ export const products: Product[] = [
   },
   {
     id: "2pt-gateway",
-    name: "ETC 2-Port DMX/RDM Gateway",
+    name: "ETC Response 2-Port DMX/RDM Gateway",
     category: "ETC",
     categorySlug: "control",
     wattage: 0,
@@ -713,7 +713,10 @@ export const products: Product[] = [
         </div>
       </div>
     ),
-    specs: [{ name: "Universes Controllable", value: "48" }],
+    specs: [
+      { name: "DMX Ports", value: "2" },
+      { name: "Power", value: "POE" },
+    ],
     features: ["ETC EOS Family Control", "Portable Control Solution"],
   },
   {
@@ -738,8 +741,68 @@ export const products: Product[] = [
         </div>
       </div>
     ),
-    specs: [{ name: "DMX Ports", value: "4" }],
+    specs: [
+      { name: "DMX Ports", value: "4" },
+      { name: "Power", value: "POE" },
+    ],
     features: ["ETC EOS Family Control", "Portable sACN Solution"],
+  },
+  {
+    id: "Pathway-Opto",
+    name: "Pathway Opto Splitter",
+    category: "Pathway",
+    categorySlug: "control",
+    wattage: 0,
+    voltage: "120/208",
+    voltageOptions: [120, 208],
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/pathway/pathway-repeater-pwrep-rm.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-green-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-green-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Male DMX Ports", value: "1" },
+      { name: "Female DMX Ports", value: "9" },
+      { name: "Power", value: "POE" },
+    ],
+    features: ["Pathway Control Solution", "Portable 1-8 DMX Splitter"],
+  },
+  {
+    id: "Linksys-SS",
+    name: "SMART SWITCH LGS3XX",
+    category: "Linksys",
+    categorySlug: "control",
+    wattage: 0,
+    voltage: "120/208",
+    voltageOptions: [120, 208],
+    links: [
+      {
+        name: "User Manual/Datasheet",
+        href: "/manuals/linksys/SmartSwitch_LGS3xx_UG_RevD00.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-green-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-green-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "1Gig RJ-45 Ports", value: "18" },
+      { name: "Power", value: "IEC" },
+    ],
+    features: ["Managed Network Switch", "Tagged/Untagged VLANs"],
   },
 ];
 
