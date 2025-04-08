@@ -831,7 +831,7 @@ export const products: Product[] = [
     id: "Forms",
     name: "E-Shop Forms",
     category: "UNCSA",
-    categorySlug: "control",
+    categorySlug: "eshop",
     wattage: 0,
     voltage: "120/208",
     voltageOptions: [120, 208],
@@ -863,9 +863,9 @@ export const products: Product[] = [
       },
     ],
     icon: (
-      <div className="w-16 h-16 bg-green-950 rounded-full flex items-center justify-center">
-        <div className="w-12 h-12 bg-green-900 rounded-full flex items-center justify-center">
-          <div className="w-8 h-8 bg-green-500 rounded-full"> </div>
+      <div className="w-16 h-16 bg-yellow-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-yellow-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-yellow-500 rounded-full"> </div>
         </div>
       </div>
     ),

@@ -49,6 +49,7 @@ function getCategoryName(slug: string): string {
     moving: "Moving Lights",
     power: "Power Distribution",
     control: "Control",
+    eshop: "E-Shop",
   }
 
   return categories[slug] || "Products"

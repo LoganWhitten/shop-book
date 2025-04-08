@@ -13,12 +13,12 @@ import {
   ChevronLeft,
   Info,
   Search,
+  Wrench,
 } from "lucide-react";
 import { products } from "@/lib/products";
 import { cn } from "@/lib/utils";
 import AnimatedNumber from "@/components/animated-number";
 import type { Product } from "@/lib/types";
-import Link from "next/link";
 
 const categoryIcons = {
   incandescent: <Lightbulb className="h-5 w-5" />,
@@ -26,6 +26,7 @@ const categoryIcons = {
   moving: <Sparkles className="h-5 w-5" />,
   power: <Cable className="h-5 w-5" />,
   control: <Sliders className="h-5 w-5" />,
+  eshop: <Wrench className="h-5 w-5" />,
 };
 
 const categoryColors = {
@@ -37,6 +38,8 @@ const categoryColors = {
   power: "from-red-900/80 to-red-950/80 text-red-400 border-red-800/50",
   control:
     "from-green-900/80 to-green-950/80 text-green-400 border-green-800/50",
+  eshop:
+    "from-yellow-900/80 to-yellow-950/80 text-yellow-400 border-yellow-800/50",
 };
 
 const categoryNames = {
@@ -45,6 +48,7 @@ const categoryNames = {
   moving: "Moving Lights",
   power: "Power Distribution",
   control: "Control",
+  eshop: "E-Shop",
 };
 
 export default function Home() {
@@ -463,7 +467,8 @@ export default function Home() {
 
                   {/* Power requirements */}
                   {currentProduct.categorySlug !== "power" &&
-                    currentProduct.categorySlug !== "control" && (
+                    currentProduct.categorySlug !== "control" &&
+                    currentProduct.categorySlug !== "eshop" && (
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}

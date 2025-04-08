@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Lightbulb, Zap, Sparkles, Cable, Sliders } from "lucide-react"
+import { Lightbulb, Zap, Sparkles, Cable, Sliders, Wrench } from "lucide-react"
 
 const categories = [
   {
@@ -30,6 +30,12 @@ const categories = [
     name: "Control",
     icon: <Sliders className="h-5 w-5" />,
     href: "/category/control",
+    color: "bg-green-950 text-green-400",
+  },
+  {
+    name: "E-Shop",
+    icon: <Wrench className="h-5 w-5" />,
+    href: "/category/eshop",
     color: "bg-green-950 text-green-400",
   },
 ]
