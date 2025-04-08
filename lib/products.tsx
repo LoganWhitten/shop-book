@@ -42,7 +42,7 @@ export const products: Product[] = [
       { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
       { name: "Beam Angle", value: "5-90°" },
       { name: "Weight", value: "14-20 lbs" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "High-efficiency reflector system",
@@ -93,7 +93,7 @@ export const products: Product[] = [
       { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
       { name: "Beam Angle", value: "12-70°" },
       { name: "Weight", value: "7.5/12.8 lbs" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "Interchangeable lenses (VNSP, NSP, MFL, WFL)",
@@ -144,7 +144,7 @@ export const products: Product[] = [
       { name: "Stocked Lamps", value: "Osram HPL @ 375w | 575w | 750w" },
       { name: "Beam Angle", value: "25-45°" },
       { name: "Weight", value: "8 lbs" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "Combines PAR and Fresnel capabilities",
@@ -190,7 +190,7 @@ export const products: Product[] = [
       { name: "Max Fixtures Thru", value: "9" },
       { name: "Beam Angle", value: "5-90°" },
       { name: "Weight", value: "18.3 lbs" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "7-color LED array (XRDTM)",
@@ -230,7 +230,7 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "15.3°" },
       { name: "Weight", value: "8.3 lbs" },
       { name: "IP Rating", value: "IP20" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "Enhanced deep blue LED array",
@@ -269,7 +269,7 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "15.6°" },
       { name: "Weight", value: "20.1 lbs" },
       { name: "IP Rating", value: "IP20" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "Linear form factor for even wash",
@@ -306,7 +306,7 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "12-40°" },
       { name: "Weight", value: "69.9 lbs" },
       { name: "Ethernet", value: "In / Thru" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "CMY color mixing",
@@ -343,7 +343,7 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "12-55°" },
       { name: "Weight", value: "69.9 lbs" },
       { name: "Ethernet", value: "In / Thru" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "CMY color mixing",
@@ -380,7 +380,7 @@ export const products: Product[] = [
       { name: "Beam Angle", value: "12-55°" },
       { name: "Weight", value: "35 lbs" },
       { name: "Ethernet", value: "In / Thru" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: [
       "19 RGBW LEDs",
@@ -416,7 +416,7 @@ export const products: Product[] = [
     specs: [
       { name: "Beam Angle", value: "7-56°" },
       { name: "Weight", value: "78.5 lbs" },
-      { name: "ACT Support (vendor) Phone #", value: "(800) 255 - 9822" },
+      { name: "ACT Support (vendor) Phone #", value: "(800) 255-9822" },
     ],
     features: [
       "Framing system",
@@ -452,7 +452,7 @@ export const products: Product[] = [
     specs: [
       { name: "Beam Angle", value: "7-56°" },
       { name: "Weight", value: "33/48 lbs" },
-      { name: "ACT Support (vendor) Phone #", value: "(800) 255 - 9822" },
+      { name: "ACT Support (vendor) Phone #", value: "(800) 255-9822" },
     ],
     features: [
       "RGBA color mixing",
@@ -491,7 +491,7 @@ export const products: Product[] = [
       { name: "Max Fixtures Thru", value: "3" },
       { name: "Weight", value: "53 lbs" },
       { name: "Lenses", value: "Border | Cyc" },
-      { name: "ACT Support (vendor) Phone #", value: "(800) 255 - 9822" },
+      { name: "ACT Support (vendor) Phone #", value: "(800) 255-9822" },
     ],
     features: [
       "RGBW color mixing",
@@ -528,7 +528,7 @@ export const products: Product[] = [
     specs: [
       { name: "Beam Angle", value: "10°" },
       { name: "Weight", value: "13.35 lbs" },
-      { name: "Wildfire Phone #", value: "(310) 755 - 6780" },
+      { name: "Wildfire Phone #", value: "(310) 755-6780" },
     ],
     features: [
       "High-output UV LED array",
@@ -563,7 +563,7 @@ export const products: Product[] = [
     specs: [
       { name: "Beam Angle", value: "120°" },
       { name: "Weight", value: "17.2 lbs" },
-      { name: "Elation Professional Phone #", value: "(323) 582 - 3322 " },
+      { name: "Elation Professional Phone #", value: "(323) 582-3322 " },
     ],
     features: [
       "High-intensity white LED strobe",
@@ -598,7 +598,7 @@ export const products: Product[] = [
     specs: [
       { name: "Power In/Thru", value: "CamLoc" },
       { name: "Power Out", value: "StagePin / Socapex" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: ["Power Distribution for 12/48/96 circuits", "ETC Dimmer Cards"],
   },
@@ -622,7 +622,7 @@ export const products: Product[] = [
       { name: "Circuts @ 120v", value: "12" },
       { name: "Circuts @ 208v", value: "12" },
       { name: "Circuts @ 3 Phase", value: "3" },
-      { name: "LEX Support Phone #", value: "(203) 363 - 3742" },
+      { name: "LEX Support Phone #", value: "(203) 363-3742" },
     ],
     features: ["Power Distribution for 120/208v", "CamLoc In/Thru"],
   },
@@ -650,7 +650,7 @@ export const products: Product[] = [
     ),
     specs: [
       { name: "Universes With Key", value: "2" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: ["ETC EOS Family Control", "Portable Control Solution"],
   },
@@ -678,7 +678,7 @@ export const products: Product[] = [
     ),
     specs: [
       { name: "Universes Controllable", value: "48" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: ["ETC EOS Family Control", "Portable Control Solution"],
   },
@@ -706,7 +706,7 @@ export const products: Product[] = [
     ),
     specs: [
       { name: "Universes Controllable", value: "6?" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: ["ETC EOS Family Control", "Portable Control Solution"],
   },
@@ -735,7 +735,7 @@ export const products: Product[] = [
     specs: [
       { name: "DMX Ports", value: "2" },
       { name: "Power", value: "POE" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: ["ETC EOS Family Control", "Portable Control Solution"],
   },
@@ -764,7 +764,7 @@ export const products: Product[] = [
     specs: [
       { name: "DMX Ports", value: "4" },
       { name: "Power", value: "POE" },
-      { name: "ETC Support Phone #", value: "(608) 831 - 4116" },
+      { name: "ETC Support Phone #", value: "(608) 831-4116" },
     ],
     features: ["ETC EOS Family Control", "Portable sACN Solution"],
   },
@@ -794,7 +794,7 @@ export const products: Product[] = [
       { name: "Male DMX Ports", value: "1" },
       { name: "Female DMX Ports", value: "9" },
       { name: "Power", value: "POE" },
-      { name: "Pathway Support Phone #", value: "(866) 617 - 3074" },
+      { name: "Pathway Support Phone #", value: "(866) 617-3074" },
     ],
     features: ["Pathway Control Solution", "Portable 1-8 DMX Splitter"],
   },
@@ -823,9 +823,58 @@ export const products: Product[] = [
     specs: [
       { name: "1Gig RJ-45 Ports", value: "18" },
       { name: "Power", value: "IEC" },
-      { name: "Linksys Support", value: "(800) 326 - 7114"}
+      { name: "Linksys Support", value: "(800) 326-7114" },
     ],
     features: ["Managed Network Switch", "Tagged/Untagged VLANs"],
+  },
+  {
+    id: "Forms",
+    name: "E-Shop Forms",
+    category: "UNCSA",
+    categorySlug: "control",
+    wattage: 0,
+    voltage: "120/208",
+    voltageOptions: [120, 208],
+    links: [
+      {
+        name: "Addendum",
+        href: "/shop/Addendum.pdf",
+        size: "1MB",
+      },
+      {
+        name: "Equipment Rental",
+        href: "/shop/Equipment.pdf",
+        size: "1MB",
+      },
+      {
+        name: "External Equipment",
+        href: "/shop/External.pdf",
+        size: "1MB",
+      },
+      {
+        name: "Light Test Request",
+        href: "/shop/LightTest.pdf",
+        size: "1MB",
+      },
+      {
+        name: "Purchasing Request",
+        href: "/shop/Purchasing.pdf",
+        size: "1MB",
+      },
+    ],
+    icon: (
+      <div className="w-16 h-16 bg-green-950 rounded-full flex items-center justify-center">
+        <div className="w-12 h-12 bg-green-900 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-500 rounded-full"> </div>
+        </div>
+      </div>
+    ),
+    specs: [
+      { name: "Important", value: "Check out stuff always!" },
+      { name: "Forms", value: "Check the Documents tab" },
+      { name: "E-Shop Phone #", value: "(336) 734-2977" },
+    ],
+    features: [],
   },
 ];
 
