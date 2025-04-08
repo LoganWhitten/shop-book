@@ -287,7 +287,7 @@ export const products: Product[] = [
     categorySlug: "moving",
     wattage: 958,
     voltage: "120/208",
-    voltageOptions: [208],
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -324,7 +324,7 @@ export const products: Product[] = [
     categorySlug: "moving",
     wattage: 967,
     voltage: "120/208",
-    voltageOptions: [208],
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -361,7 +361,7 @@ export const products: Product[] = [
     categorySlug: "moving",
     wattage: 900,
     voltage: "120/208",
-    voltageOptions: [208],
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
@@ -398,7 +398,7 @@ export const products: Product[] = [
     categorySlug: "moving",
     wattage: 800,
     voltage: "120/208",
-    voltageOptions: [208],
+    voltageOptions: [120, 208],
     links: [
       {
         name: "User Manual/Datasheet",
